@@ -47,6 +47,16 @@ body {
   text-decoration: underline;
 }
 
+#nav #search_box {
+  float: right;
+  margin-top: -4px;
+}
+
+#nav #search_box input {
+  border: 1px solid #BBB;
+  padding: 3px;
+}
+
 #wrapper #content {
   padding: 15px;
   width: 70%;
@@ -63,6 +73,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 30px;
   border-bottom: 1px solid #EEE;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 #wrapper #content h2 {
@@ -77,6 +89,15 @@ h1, h2, h3, h4, h5, h6 {
 
 #wrapper #content .article.last_article {
   border-bottom: 0px;
+}
+
+#wrapper #content #pagination {
+  margin-top: 25px;
+}
+
+#wrapper #content #pagination a {
+  font-weight: normal;
+  color: #333;
 }
 
 #wrapper p {
@@ -110,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 #sidebar h2 {
   font-weight: bold;
   font-size: 18px;
-  margin: 10px 0;
+  margin: 15px 0 5px;
 }
 
 #wrapper #footer {
