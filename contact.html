@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Simple blog layout - Contact</title>
+    <link rel="stylesheet" href="resets.css" type="text/css" />
+    <link rel="stylesheet" href="application.css" type="text/css" />
+  </head>
+  <body>
+    <div id="nav">
+      <nav>
+        <a href="index.html">Home</a> |
+        <a href="#">Subscribe</a> |
+        <a href="#">About</a> |
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div id="search_box">
+        <form method="POST">
+          <label for="search">Search</label>
+          <input type="text" name="search" id="search" />
+          <input type="submit" value="Go" />
+        </form>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="content">
+        <h1>Contact us</h1>
+        <p>We'd like to hear from you, drop us a line and we will gladly respond to you as soon as possible.</p>
+
+        <fieldset>
+          <form method="post">
+            <label for="name">Name <small>This is the of the person we will write back to</small></label>
+            <input type="text" name="name" autocomplete="off" id="name" />
+
+            <label for="email">Email <small>This is the email address we will write back to</small></label>
+            <input type="text" name="email" autocomplete="off" id="email" />
+
+            <label for="message">Message <small>Use this box to write your message</small></label>
+            <textarea name="message" id="message"></textarea>
+
+            <input type="button" value="Send" />
+          </form>
+        </fieldset>
+      </div>
+
+      <div id="sidebar">
+        <h2>Need to chat?</h2>
+        <ul class="icons">
+          <li class="gtalk">someone[at]gmail.com</li>
+          <li class="skype">skypename</li>
+          <li class="msn">someone[at]msn.com</li>
+        </ul>
+
+        <h2>Follow us</h2>
+        <ul class="icons">
+          <li class="twitter"><a href="http://www.twitter.com/dude" target="_blank">Twitter</a></li>
+          <li class="facebook"><a href="http://www.facebook.com/dude" target="_blank">Facebook</a></li>
+          <li class="myspace"><a href="http://www.myspace.com/dude" target="_blank">Myspace</a></li>
+          <li class="youtube"><a href="http://www.youtube.com/dude" target="_blank">YouTube</a></li>
+        </ul>
+      </div>
+      <div class="clear"></div>
+
+      <div id="footer">
+        <p>This is the footer section you can use this for legal, copyright or powered by info.</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -117,6 +117,38 @@ h1, h2, h3, h4, h5, h6 {
   list-style: none;
 }
 
+#wrapper #sidebar ul.icons li {
+  margin-left: 25px;
+}
+
+#wrapper #sidebar ul li.twitter {
+  list-style-image: url('images/icons/16/twitter.png');
+}
+
+#wrapper #sidebar ul li.facebook {
+  list-style-image: url('images/icons/16/facebook.png');
+}
+
+#wrapper #sidebar ul li.myspace {
+  list-style-image: url('images/icons/16/myspace.png');
+}
+
+#wrapper #sidebar ul li.youtube {
+  list-style-image: url('images/icons/16/youtube.png');
+}
+
+#wrapper #sidebar ul li.msn {
+  list-style-image: url('images/icons/16/msn.png');
+}
+
+#wrapper #sidebar ul li.gtalk {
+  list-style-image: url('images/icons/16/google-talk.png');
+}
+
+#wrapper #sidebar ul li.skype {
+  list-style-image: url('images/icons/16/skype.png');
+}
+
 #wrapper a {
   font-size: 12px;
   color: #4183C4;
@@ -135,16 +167,45 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #wrapper #footer {
-  margin: 0 auto;
   width: 960px;
   color: #333;
-  position: absolute;
-  bottom: 0;
   text-shadow: 2px 2px #DEDEDE;
+  position: absolute;
 }
 
 #wrapper #footer p {
  color: #333;
  font-weight: bold;
- text-align: right;
+}
+
+/** Form styles **/
+
+fieldset {
+  padding: 1em 5em;
+}
+
+fieldset form label {
+  display:block;
+  font-size: 16px;
+  margin: 8px 0px;
+}
+
+label small {
+  font-size: 11px;
+  color: #666;
+}
+
+fieldset form input[type=text], fieldset form textarea {
+  border: 2px solid #BBB;
+  padding: 6px 3px;
+}
+
+fieldset form input[type=text] {
+  width: 70%;
+}
+
+fieldset form textarea {
+  width: 90%;
+  height: 150px;
+  margin-bottom: 5px;
 }

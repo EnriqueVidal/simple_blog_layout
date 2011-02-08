@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8" />
     <title>Simple blog layout</title>
     <link rel="stylesheet" href="resets.css" type="text/css" />
     <link rel="stylesheet" href="application.css" type="text/css" />
@@ -8,21 +9,25 @@
   <body>
     <div id="nav">
       <nav>
-        <a href="#">Home</a> |
+        <a href="index.html">Home</a> |
         <a href="#">Subscribe</a> |
         <a href="#">About</a> |
-        <a href="#">Contact</a>
+        <a href="contact.html">Contact</a>
       </nav>
 
       <div id="search_box">
-        <label for="search">Search</label>
-        <input type="text" name="search" />
-        <input type="submit" value="Go" />
+        <form method="POST">
+          <label for="search">Search</label>
+          <input type="text" name="search" id="search" />
+          <input type="submit" value="Go" />
+        </form>
       </div>
     </div>
     <div id="wrapper">
       <div id="content">
         <h1>This is the simple blog template</h1>
+        <p>This is an embed example</p>
+        <embed width="100%" height="398" allowfullscreen="true" allowscriptaccess="always" quality="best" wmode="transparent" bgcolor="#000" flashvars="XMLPath=http%3A%2F%2Fu.jimdo.com%2Fwww16%2Fo%2Fs92659c01a5c58603%2Fgallery%2Fm262fcd214c9b7304%2F1239324584%2Fconfig.xml&amp;langID=EN&amp;cacheXML=true" menu="false" type="application/x-shockwave-flash" id="flash-1297143163933" src="http://u.jimdo.com/www16/o/s/gallery/player/ws-slideshow.swf" />
         <div class="article">
           <h2>Article example</h2>
           <p>Articles should be perfectly align and allow the user to see a brief description of them.</p>
@@ -34,18 +39,23 @@
           <p>Expan vertically as needed without breaking the wrapper</p>
           <a href="#">Read more...</a>
         </div>
-        <div class=" article last_article">
+        <div class="article">
           <h2>Properly spaced</h2>
           <p>Article previews should be properly spaced to ensure that they are easy on the eyes of the reader</p>
           <a href="#">Read more...</a>
         </div>
+        <div class="article last_article">
+          <h2>HTML5 validation</h2>
+          <p>This layout should validate agains the W3C validator out of the box.</p>
+          <a href="#">Read more...</a>
+        </div>
 
         <div id="pagination">
-          <a href="#">Back</a>
+          <a href="#">« Back</a>
           <a href="#">1</a>
           <a href="#">2</a>
           <a href="#">3</a>
-          <a href="#">Next</a>
+          <a href="#">Next »</a>
         </div>
       </div>
 
@@ -63,10 +73,11 @@
         <h2>Whishlist</h2>
         <ul>
           <li><a href="http://pragprog.com/titles/jruby/using-jruby">Using JRuby</a></li>
+          <li><a href="http://pragprog.com/titles/msard/arduino">Arduino</a></li>
         </ul>
       </div>
 
-      <div class="clear" />
+      <div class="clear"></div>
 
       <div id="footer">
         <p>This is the footer section you can use this for legal, copyright or powered by info.</p>
