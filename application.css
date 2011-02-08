@@ -9,9 +9,6 @@ html body #nav {
   width: 910px;
 }
 
-html body #wrapper {
- /* min-height: 600px; */
-}
 .clear { clear: both; }
 
 #nav, #wrapper {
@@ -36,6 +33,7 @@ body {
 #nav {
   font-size: 12px;
   font-weight: bold;
+  position: relative;
 }
 
 #nav a {
@@ -48,8 +46,9 @@ body {
 }
 
 #nav #search_box {
-  float: right;
-  margin-top: -4px;
+  position: absolute;
+  top: 5px;
+  right: 15px;
 }
 
 #nav #search_box input {
